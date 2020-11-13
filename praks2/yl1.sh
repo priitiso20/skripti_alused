@@ -3,5 +3,6 @@
 # kasutaja tervitus
 # autor - Priit Kenkmann
 #
-echo "Tere, kasutaja!"
-
+echo -n "Tere, "
+echo -n $(whoami)
+echo "!"
