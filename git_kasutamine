@@ -11,3 +11,12 @@ $ git config --global core.editor nano
 3. Initsialiseerimine (ainult 1 kord alguses töökaustas)
 
 git init
+
+4. kasutamine
+
+git status
+git add faili_nimi
+git commit -m "muudatuse kirjeldus"
+
+git log
+git show commiti_hash
