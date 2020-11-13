@@ -25,5 +25,5 @@ git show commiti_hash
 6. remote kasutamine
 
 github repo ühenduse lisamiseks
-git remote add origin https://link
+git remote add origin https://github.com/priitiso20/skripti_alused.git
 git push -u origin master
