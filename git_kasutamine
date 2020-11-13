@@ -8,4 +8,6 @@ $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 $ git config --global core.editor nano
 
+3. Initsialiseerimine (ainult 1 kord alguses töökaustas)
 
+git init
