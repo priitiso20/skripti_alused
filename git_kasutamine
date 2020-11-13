@@ -18,5 +18,6 @@ git status
 git add faili_nimi
 git commit -m "muudatuse kirjeldus"
 
+5. muudatuste uurimine
 git log
 git show commiti_hash
