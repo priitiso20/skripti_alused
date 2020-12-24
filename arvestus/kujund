@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# autor Priit Kenkmann
+# skripti nimi Kujund
+# skript valmistab kujundi vastavalt etteantud ridade arvule
+
+#siin küsitakse kasutajalt ridade arvu.
+echo -n  "Sisesta ridade arv: "
+read ridu
+
+
+for (( i = $ridu; i >= 1; i-- )) do 	# muutuja i algväärtus on kasutaja sisestatud arv. Skript käivitub niikaua kui i on vähemalt 1. Iga käivitusega muutub i ühe võrra väiksemaks.
+for (( j = 1 ; j <= i; j++ )) do	# muutuja j algväärtus on sama mis i. Skript käivitub niikaua kui j on väiksem või võrdne kui i. Iga käivitusega muutub j ühe võrra suuremaks.
+echo -n "* "				# trükib tärni ja selle järele tühiku, aga reavahet ei tekita.
+done					# sisemise for-tsükli lõpp.
+echo ""					# tekitab reavahe.
+done					# välimise for-tsükli lõpp.
+
