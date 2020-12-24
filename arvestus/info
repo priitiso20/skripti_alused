@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#skripti autor Priit Kenkmann
+#skripti nimi info
+#skript tervitab sisselogitud kasutajat ning väljastab kuupäeva ja kellaaja
+
+#whoami ütleb sisselogitud kasutajanime.
+echo "Tere, $(whoami)!"
+#date ütleb esmalt tänase kuupäeva koos neljakohalise aastaarvuga ning seejärel kellaaja tunni ja minuti täpsusega.
+echo "Täna on $(date +"%d.%m.%Y") kell $(date +"%H.%M")"
