@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#kujundi tekitamine vastavalt kasutaja eelistustele
+
+echo "Sisesta ridade arv: "
+read ridu
+echo "Sisesta tärnide arv reas: "
+read tarne
+
+for (( i = 1; i <= $ridu; i++ )) do
+echo -n "$i. "
+for (( j = 1 ; j <= $tarne; j++ )) do
+echo -n "* "
+done
+echo ""
+done
+
+
+
+
+
+
