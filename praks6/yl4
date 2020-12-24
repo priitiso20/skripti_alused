@@ -22,6 +22,28 @@ break
 fi
 done
 
+arv=1
+jagaja=2
 
 
 
+echo "Ühtlasi analüüsime 20 esimest täisarvu."
+
+if [[ $arv = 1 ]]; then
+echo "$arv ei ole algarv"
+fi
+
+for (( arv=2; arv <= 20; arv++ )); do
+jagaja=2
+while [[ $arv -ge $jagaja ]]; do
+if [[ $arv -eq $jagaja ]]; then
+echo "$arv on algarv"
+break
+elif [[ $((arv%jagaja)) -ne 0 ]]; then
+((jagaja++))
+else
+echo "$arv ei ole algarv"
+break
+fi
+done
+done
