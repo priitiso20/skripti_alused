@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#kellaaeg ja tervitamine
+
+
+echo "Sisesta tund: "
+read tund
+
+if [ $tund -ge 22 -a $tund -le 24 ] || [ $tund -ge 00 -a $tund -lt 06 ]; then
+	echo "Head ööd!"
+elif [ $tund -ge 06 -a $tund -lt 12 ]; then
+	echo "Tere hommikust!"
+elif [ $tund -ge 12 -a $tund -lt 18 ]; then
+	echo "Tere päevast!"
+elif [ $tund -ge 18 -a $tund -lt 22 ]; then
+	echo "Tere õhtust!"
+else
+	echo "Vale sisend"
+fi
+
