@@ -4,13 +4,14 @@
 # skripti nimi menu
 # skript väljastab kasutajale soovitud menüü kohta kommentaari
 
-
+#siin trükitakse kasutajale 3 rida, mille vahel ta peab arvu sisestades valima. Arv läheb muutujaks "arv".
 echo "1) liha ja kartulid"
 echo "2) kala ja krõpsud"
 echo "3) supp ja salat"
 echo "Tee oma valik (1 või 2 või 3): "
 read arv
 
+#siin trükitakse kasutajale vastus, sõltuvalt arvust, mille ta sisestas.
 if test $arv -eq 1; then
 echo "Väga maitsev, aga jälgi oma tervist!"
 echo "Head isu!"
