@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# kas on algarv?
+
+echo "Sisesta suvaline arv: "
+read arv
+jagaja=2
+
+if [[ $arv = 1 ]]; then
+echo "$arv ei ole algarv"
+fi
+
+while [[ $arv -ge $jagaja ]]; do
+if [[ $arv -eq $jagaja ]]; then
+echo "$arv on algarv"
+break
+elif [[ $((arv%jagaja)) -ne 0 ]]; then
+((jagaja++))
+else
+echo "$arv ei ole algarv"
+break
+fi
+done
+
+
+
+
