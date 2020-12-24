@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#10 esimese paarisarvu summa
+
+summa=0
+
+for ((kord = 1; kord <= 10; kord++)); do
+if [[ $(( kord%2 )) -eq 0 ]]; then
+summa=$((summa+kord))
+fi
+done
+
+echo "1st 10ni paariarvude summa on $summa"
