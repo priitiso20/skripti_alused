@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#kuupäev ja kellaaeg
+
+echo -n "Today is "
+echo -n $(date +%A)
+echo -n ", "
+echo -n $(date +%B)
+echo -n " "
+echo -n $(date +%d)
+echo -n ", "
+echo $(date +%Y)
+
+echo -n  "Time is "
+echo $(date +%R)
+echo -n "Calendar of "
+cal
